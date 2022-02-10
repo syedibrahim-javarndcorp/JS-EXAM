@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expense Manager App</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="title">Simple Expense Manager Project</h1>
+        <div class="container-fluid">
+        <h2 class="subTitle1">Add a new item : </h2>
+        <h2 id="newfriend">Add a friend <i class="fa fa-plus-circle"></i></h2>
+        </div>
+    <header>
+
+    <section class="content">
+        <div class="form">
+            <form id="expForm">
+
+                <div class="form-section cash">
+                    <span for="type">Type:</span>
+                    <select id="type">
+                        <option value=""></option>
+                        <option value="Cash">Cash</option>
+                        <option value="Card">Card</option>
+                        <option value="Other">Others</option>
+                    </select>
+                    <br />
+                    <span class="error-msg err-type">Method of payment</span>
+                </div>
+
+                <div class="form-section addfriend">
+                    <span for="newfriend">Add friend:</span>
+                    <select id="createfriend" multiple>
+                        <option value=""></option>
+                    </select><br />
+                    <span class="error-msg err-newfriend">Add a friend</span>
+                </div>
+
+                <div class="form-section nam">
+                    <span for="name">Name:</span>
+                    <input type="text" id="name" placeholder="What did you spend on?"><br />
+                    <span class="error-msg err-name">What did you spend on?</span>
+                </div>
+
+                <div class="form-section when">
+                    <span for="date">Date:</span>
+                    <input type="date" id="date"><br />
+                    <span class="error-msg err-date">Please select the date</span>
+                </div>
+
+                <div class="form-section dollar">
+                    <span for="currency">Currency:</span>
+                    <select id="currency">
+                        <option value=""></option>
+                        <option value="USD">USD($)</option>
+                    </select><br />
+                    <span class="error-msg err-currency">select the currency</span>
+                </div>
+
+                <div class="form-section total">
+                    <span for="amount">Amount:</span>
+                    <input type="text" id="amount" placeholder="How much?"><br />
+                    <span class="error-msg err-amount">Enter The Amount</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary buttonSave">Add a new expense</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="content">
+        <table class="table result" id='myTable'>
+            <thead>
+                <tr style="background-color:#d2d6dd;">
+                    <th colspan="4">Filter by Friend:
+                        <select id="createfriend2" onchange="filternameByFunction()">
+                        </select>
+                    </th>
+                    <th colspan="4">Currency:
+                        <select id="currency2" onchange="filtercurrencyByFunction()">
+                        <option value="USD">USD($)</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr style="background-color:#f5f7fa; padding: 2px;">
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Friends</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="expenseTable">
+                <tr id="empty">
+                    <td colspan="8">Your added items will show up here!</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    
+    <scriptcontentEditable src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    <script src="./script.js"></script>
+    </script>
+
+</body>
+
+</html>

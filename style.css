@@ -1,0 +1,158 @@
+/* Without any classes and IDs */
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: #17af70;
+}
+
+input {
+  width: 150px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  cursor: text;
+  padding: 10px;
+}
+
+select {
+  width: 175px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+table {
+  width: 60%;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+thead {
+  background-color: #fff;
+  line-height: 30px;
+}
+
+span {
+  display: inline-block;
+  width: 100px;
+  color: #fff;
+  vertical-align: top;
+}
+
+button {
+  background-color: #16acf1;
+  border: #52b1dd;
+  width: 200px;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 20px;
+  margin: 5% 30%;
+  cursor: pointer;
+}
+
+/* Classes */
+
+.title {
+  width: 750px;
+  color: #fff;
+  margin: 4% auto;
+  text-align: center;
+}
+
+.container-fluid {
+  padding-left: 0rem;
+  padding-right: 0rem;
+  overflow: hidden;
+}
+
+.content {
+  width: 700px;
+  margin: 2% auto;
+  background-color: #17af70;
+  padding: 1%;
+}
+
+.subTitle1 {
+  width: 700px;
+  text-align: left;
+  color: #fff;
+  margin: auto;
+}
+
+.fa-plus-circle {
+  font-size: 30px;
+  color: #fff;
+}
+
+.form {
+  width: 700px;
+  margin: auto;
+}
+
+.form-section {
+  display: inline-block;
+  padding: 15px 15px;
+  font-size: 1.3em;
+}
+
+.cash {
+  float: left;
+  margin-bottom: 7%;
+}
+.nam {
+  float: left;
+  margin-bottom: 4%;
+}
+.dollar {
+  float: left;
+}
+
+.addfriend {
+  float: right;
+  margin-bottom: 1%;
+}
+.when {
+  float: right;
+  margin-bottom: 4%;
+  margin-top: -3%;
+}
+.total {
+  float: right;
+  margin-bottom: 3%;
+  margin-top: -1%;
+}
+
+.result {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+}
+
+.error-msg {
+  color: #fa0000;
+  font-weight: bold;
+  font-size: 15px;
+  opacity: 0;
+  margin: -2% ;
+}
+
+/* ID */
+
+#empty {
+  text-align: center;
+}
+
+#newfriend {
+  width: 700px;
+  text-align: right;
+  color: #fff;
+  margin: auto;
+  cursor: pointer;
+}
+#expenseTable {
+  text-align: center;
+}
